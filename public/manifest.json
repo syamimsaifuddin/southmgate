@@ -1,21 +1,22 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "SMG",
+  "name": "South Moonsgate",
+  "description": "A multi field servicing provider",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "48x48 48x48 48x48 48x48",
       "type": "image/x-icon"
     },
     {
       "src": "Transparent_Image_6.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "1347x790"
     },
     {
       "src": "Transparent_Image_6.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "1347x790"
     }
   ],
   "start_url": ".",

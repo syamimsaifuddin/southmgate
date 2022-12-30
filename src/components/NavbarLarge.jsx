@@ -3,7 +3,6 @@ import Grid from '@mui/material/Grid';
 import CompanyLogo from '../images/Transparent_Image_6.png'
 
 function Navbar(props){
-    const {footnoteScroll} = props
     return (
             <Box 
                 sx={{paddingLeft: "100px", 
