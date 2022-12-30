@@ -31,19 +31,19 @@ function Navbar(props){
                             sx={{ order: { xs: 2, sm: 2 }, width:"auto" }}>
 
                             <Grid>
-                                <a href="#contact" className='navBarText' >Home</a>
+                                <a href="#" className='navBarText' >Home</a>
                             </Grid>
 
                             <Grid>
-                                <a href="#contact" className='navBarText'>About</a>
+                                <a href="#" className='navBarText'>About</a>
                             </Grid>
 
                             <Grid>
-                                <a href="#contact" className='navBarText'>Services</a>
+                                <a href="#" className='navBarText'>Services</a>
                             </Grid>
 
                             <Grid>
-                                <a href="#contact" className='navBarText'>Team</a>
+                                <a href="#" className='navBarText'>Team</a>
                             </Grid>
                             
                             <Grid>

@@ -59,10 +59,10 @@ function MobileMenu(props){
             </Grid>
             <Box className='menu' style={{display: open ? "block" : "none"}}>
                 <Stack spacing={2}>
-                    <a href="#contact" style={{textDecoration: "none", color: "black"}}>Home</a>
-                    <a href="#contact" style={{textDecoration: "none", color: "black"}}>About</a>
-                    <a href="#contact" style={{textDecoration: "none", color: "black"}}>Services</a>
-                    <a href="#contact" style={{textDecoration: "none", color: "black"}}>Team</a>
+                    <a href="#" style={{textDecoration: "none", color: "black"}}>Home</a>
+                    <a href="#" style={{textDecoration: "none", color: "black"}}>About</a>
+                    <a href="#" style={{textDecoration: "none", color: "black"}}>Services</a>
+                    <a href="#" style={{textDecoration: "none", color: "black"}}>Team</a>
                     <a href="#contact" style={{textDecoration: "none", color: "black"}} onClick={openMenu}>Contact</a>
                 </Stack>
             </Box>
