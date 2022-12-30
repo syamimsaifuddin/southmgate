@@ -3,10 +3,9 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import CompanyLogo from '../images/Transparent_Image_6.png'
 import Button from '@mui/material/Button';
-import Popover from '@mui/material/Popover';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Typography } from '@mui/material';
 import { Stack } from '@mui/system';
+import CloseIcon from '@mui/icons-material/Close';
 
 function MobileMenu(props){
 
@@ -59,6 +58,9 @@ function MobileMenu(props){
             </Grid>
             <Box className='menu' style={{display: open ? "block" : "none"}}>
                 <Stack spacing={2}>
+                    <Button>
+                            {<CloseIcon sx={{color: "black"}} onClick={openMenu}/>}
+                    </Button>
                     <a href="#" style={{textDecoration: "none", color: "black"}}>Home</a>
                     <a href="#" style={{textDecoration: "none", color: "black"}}>About</a>
                     <a href="#" style={{textDecoration: "none", color: "black"}}>Services</a>
