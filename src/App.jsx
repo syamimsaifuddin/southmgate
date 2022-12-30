@@ -3,6 +3,7 @@ import Navbar from "./components/NavbarLarge"
 import "./styles.css"
 import Box from '@mui/material/Box';
 import DrawerMobile from './components/DrawerMobile';
+import Footnote from './components/Footnote';
 
 function App(){
 
@@ -42,7 +43,7 @@ function App(){
                 
         </Box>
             }
-            <h1>nabil gemok</h1>
+            <Footnote/>
         </>
     )
 }
