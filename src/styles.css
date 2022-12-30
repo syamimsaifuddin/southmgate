@@ -29,7 +29,8 @@ body {
 .Footnote {
     padding-top: 30px;
     padding-bottom: 30px;
-    position: fixed;
+    margin-top: 20px;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
     background-color: #f5f5f5;

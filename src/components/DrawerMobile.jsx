@@ -10,7 +10,11 @@ import Button from '@mui/material/Button';
 import ListItemButton from '@mui/material/ListItemButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+
 function DrawerMobile(props){
+    const {footnoteScroll} = props
 
     const [drawer, setDrawer] = useState(false)
     
@@ -31,7 +35,7 @@ function DrawerMobile(props){
         >
             <List>
                 {['Home', 'About', 'Services', 'Team', 'Contact'].map((text, index) => (
-                    <ListItem key={text} >
+                    <ListItem key={text} onClick={footnoteScroll}>
                         <ListItemButton>
                             <Typography>
                                 {text}

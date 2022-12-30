@@ -1,13 +1,10 @@
-import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
 import CompanyLogo from '../images/Transparent_Image_6.png'
 import Typography from '@mui/material/Typography';
 
 function Navbar(props){
-
-    
+    const {footnoteScroll} = props
     return (
             <Box 
                 sx={{paddingLeft: "100px", 
@@ -58,7 +55,7 @@ function Navbar(props){
                             </Grid>
                             
                             <Grid>
-                                <Typography sx={{marginRight:"15px"}} className="NavObject">
+                                <Typography sx={{marginRight:"15px"}} className="NavObject" onClick={footnoteScroll}>
                                     Contact
                                 </Typography>
                             </Grid>
