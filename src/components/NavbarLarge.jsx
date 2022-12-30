@@ -31,33 +31,23 @@ function Navbar(props){
                             sx={{ order: { xs: 2, sm: 2 }, width:"auto" }}>
 
                             <Grid>
-                                <Typography sx={{marginRight:"15px"}} className="NavObject">
-                                    Home
-                                </Typography>
+                                <a href="#contact" className='navBarText' >Home</a>
                             </Grid>
 
                             <Grid>
-                                <Typography sx={{marginRight:"15px"}} className="NavObject">
-                                    About
-                                </Typography>
+                                <a href="#contact" className='navBarText'>About</a>
                             </Grid>
 
                             <Grid>
-                                <Typography sx={{marginRight:"15px"}} className="NavObject">
-                                    Services
-                                </Typography>
+                                <a href="#contact" className='navBarText'>Services</a>
                             </Grid>
 
                             <Grid>
-                                <Typography sx={{marginRight:"15px"}} className="NavObject">
-                                    Team
-                                </Typography>
+                                <a href="#contact" className='navBarText'>Team</a>
                             </Grid>
                             
                             <Grid>
-                                <Typography sx={{marginRight:"15px"}} className="NavObject" onClick={footnoteScroll}>
-                                    Contact
-                                </Typography>
+                                <a href="#contact" className='navBarText'>Contact</a>
                             </Grid>
                         </Grid>
                 </Grid>

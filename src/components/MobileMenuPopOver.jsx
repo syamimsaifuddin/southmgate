@@ -6,11 +6,21 @@ import Button from '@mui/material/Button';
 import Popover from '@mui/material/Popover';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Typography } from '@mui/material';
+import { Stack } from '@mui/system';
 
 function MobileMenu(props){
 
     const {footnoteScroll} = props
     const [open, isOpen] = useState(false)
+
+    const openMenu = () => {
+        isOpen(!open)
+    }
+
+    function OpenCloseMenu() {
+        var element = document.getElementById("menuPopoverClose");
+        element.classList.toggle("menuPopoverOpen");
+    }
 
     return (  
         <Box position='static'
@@ -36,17 +46,26 @@ function MobileMenu(props){
 
                 <Grid 
                     container 
-                    columnSpacing={1} 
+                    columnSpacing={1} ss
                     sx={{ order: { xs: 2, sm: 2 }, width:"auto" }}>
 
                     <Grid>
                         <Button>
-                            {<MenuIcon sx={{color: "black"}}/>}
+                            {<MenuIcon sx={{color: "black"}} onClick={openMenu}/>}
                         </Button>
                     </Grid>
 
                 </Grid>
             </Grid>
+            <Box className='menu' style={{display: open ? "block" : "none"}}>
+                <Stack spacing={2}>
+                    <a href="#contact" style={{textDecoration: "none", color: "black"}}>Home</a>
+                    <a href="#contact" style={{textDecoration: "none", color: "black"}}>About</a>
+                    <a href="#contact" style={{textDecoration: "none", color: "black"}}>Services</a>
+                    <a href="#contact" style={{textDecoration: "none", color: "black"}}>Team</a>
+                    <a href="#contact" style={{textDecoration: "none", color: "black"}} onClick={openMenu}>Contact</a>
+                </Stack>
+            </Box>
         
         </Box>
     )

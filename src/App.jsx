@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import Navbar from "./components/NavbarLarge"
 import "./styles.css"
 import Box from '@mui/material/Box';
-import DrawerMobile from './components/DrawerMobile';
 import Footnote from './components/Footnote';
 import MobileMenu from './components/MobileMenuPopOver';
 
@@ -48,14 +47,14 @@ function App(){
                 </Box>
                 : <Box className="Box">
                         <MobileMenu footnoteScroll={footnoteScroll}/>
-                        <Box sx={{backgroundColor: "#DD9331", height: "800px", width: "100%", borderRadius: "20px", margin: "auto"}}>
+                        <Box sx={{backgroundColor: "#DD9331", height: "800px", width: "100%", borderRadius: "20px", margin: "auto", marginBottom: "20px"}}>
                         </Box>
                         <Box sx={{backgroundColor: "#DD9331", height: "800px", width: "100%", borderRadius: "20px", margin: "auto"}}>
                         </Box>
                 
                     </Box>
             }
-            <Footnote id="footnote"/>
+            <Footnote id="contact"/>
         </>
     )
 }

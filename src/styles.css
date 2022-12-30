@@ -35,3 +35,22 @@ body {
     width: 100%;
     background-color: #f5f5f5;
 }
+
+.menu {
+    display: block;
+    top: 120px;
+    width: 90%;
+    position: absolute;
+    background-color: rgb(248, 248, 248);
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: rgba(81, 79, 79, 0.419) 2px 2px 3px;
+}
+
+.navBarText {
+    font-family: Roboto;
+    text-decoration: none; 
+    color: black;
+    margin-right:15px;
+}
