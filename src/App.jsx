@@ -9,13 +9,6 @@ function App(){
 
     const [windowSize, setWindowSize] = useState(getWindowSize())
 
-    const footnoteScroll = () => {
-        const element = document.getElementById('footnote');
-        if (element) {
-            element.scrollIntoView({ behavior: 'instant' });
-        }
-    };
-
     function getWindowSize() {
         const {innerWidth, innerHeight} = window;
         return {innerWidth, innerHeight};
@@ -38,7 +31,7 @@ function App(){
             { windowSize.innerWidth > 750 
                 ? 
                 <Box className="Box">
-                        <Navbar footnoteScroll={footnoteScroll}/>
+                        <Navbar/>
                         <Box sx={{backgroundColor: "#DD9331", height: "600px", width: "80%", borderRadius: "20px", margin: "auto", marginBottom: "20px"}}>
                         </Box>
                         <Box sx={{backgroundColor: "#DD9331", height: "600px", width: "80%", borderRadius: "20px", margin: "auto"}}>
@@ -46,7 +39,7 @@ function App(){
                         
                 </Box>
                 : <Box className="Box">
-                        <MobileMenu footnoteScroll={footnoteScroll}/>
+                        <MobileMenu/>
                         <Box sx={{backgroundColor: "#DD9331", height: "800px", width: "100%", borderRadius: "20px", margin: "auto", marginBottom: "20px"}}>
                         </Box>
                         <Box sx={{backgroundColor: "#DD9331", height: "800px", width: "100%", borderRadius: "20px", margin: "auto"}}>

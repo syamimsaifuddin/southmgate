@@ -56,18 +56,22 @@ function MobileMenu(props){
 
                 </Grid>
             </Grid>
-            <Box className='menu' style={{display: open ? "block" : "none"}}>
-                <Stack spacing={2}>
-                    <Button>
-                            {<CloseIcon sx={{color: "black"}} onClick={openMenu}/>}
-                    </Button>
-                    <a href="#" style={{textDecoration: "none", color: "black"}}>Home</a>
-                    <a href="#" style={{textDecoration: "none", color: "black"}}>About</a>
-                    <a href="#" style={{textDecoration: "none", color: "black"}}>Services</a>
-                    <a href="#" style={{textDecoration: "none", color: "black"}}>Team</a>
-                    <a href="#contact" style={{textDecoration: "none", color: "black"}} onClick={openMenu}>Contact</a>
-                </Stack>
-            </Box>
+            {/* style={{display: open ? "block" : "none"}} */}
+            { open ? 
+                <Box className='menu'>
+                    <Stack spacing={2}>
+                        <Button>
+                                {<CloseIcon sx={{color: "black"}} onClick={openMenu}/>}
+                        </Button>
+                        <a href="#" style={{textDecoration: "none", color: "black"}}>Home</a>
+                        <a href="#" style={{textDecoration: "none", color: "black"}}>About</a>
+                        <a href="#" style={{textDecoration: "none", color: "black"}}>Services</a>
+                        <a href="#" style={{textDecoration: "none", color: "black"}}>Team</a>
+                        <a href="#contact" style={{textDecoration: "none", color: "black"}} onClick={openMenu}>Contact</a>
+                    </Stack>
+                </Box>
+                : null
+            }
         
         </Box>
     )
