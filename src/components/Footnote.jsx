@@ -14,9 +14,13 @@ function Footnote(props){
                 <Grid>
                     <Stack spacing={0} justifyContent="center" alignItems="center">
                         <Typography sx={{fontFamily: 'Roboto'}}>Email</Typography>
-                        <Typography sx={{fontFamily: 'Roboto', fontSize: "12px", color:"#DD9931"}}>info@southmoonsgate.com</Typography>
+                        <a href={`mailto:info@southmoonsgate.com`} className="linkEmail">
+                            <Typography sx={{fontFamily: 'Roboto', fontSize: "12px", color:"#DD9931"}}>info@southmoonsgate.com</Typography>
+                        </a>
                         <Typography sx={{fontFamily: 'Roboto'}}>Location</Typography>
                         <Typography sx={{fontFamily: 'Roboto', fontSize: "12px", color:"#DD9931"}}>****</Typography>
+
+
                     </Stack>
                 </Grid>
             </Grid>
