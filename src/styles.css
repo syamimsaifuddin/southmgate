@@ -1,0 +1,27 @@
+
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto"),
+    url("./font/Roboto-Regular.ttf") format("truetype");
+    font-weight: bold;
+    }
+
+body {
+    padding: 0;
+    margin: 0
+}
+
+.Logo {
+    height: 80px;
+}
+
+.NavObject:hover {
+    color: #DD9931;
+    cursor: pointer;
+}
+
+.Box {
+    align-items: center;
+    text-align: center;
+}
