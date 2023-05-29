@@ -2,7 +2,6 @@
     font-family: "Roboto";
     src: local("Roboto"),
     url("./font/Roboto-Regular.ttf") format("truetype");
-    font-weight: bold;
     }
 
 body {
@@ -26,7 +25,7 @@ body {
 }
 
 .Footnote {
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 30px;
     margin-top: 20px;
     /* position: fixed; */
@@ -50,6 +49,7 @@ body {
     margin-right: auto;
     animation-name: example;
     animation-duration: 0.2s; 
+    z-index: 10;
 }
 
 @keyframes example {
@@ -72,4 +72,16 @@ body {
     text-decoration: underline;
     text-decoration-color: black;
     
+}
+
+.mainTitle {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/mainImage.jpg");
+    background-size: cover;
+    opacity: 0.8;
+    background-position: center bottom;
+}
+
+.image {
+    object-fit: scale-down;
+    width: 100%
 }

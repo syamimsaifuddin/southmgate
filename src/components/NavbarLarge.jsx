@@ -5,8 +5,9 @@ import CompanyLogo from '../images/Transparent_Image_6.png'
 function Navbar(props){
     return (
             <Box 
-                sx={{paddingLeft: "100px", 
-                    paddingRight: "100px", 
+                sx={{
+                    marginLeft: "100px", 
+                    marginRight: "100px", 
                     backgroundColor: "rgba(255, 255, 255, 0)", 
                     fontFamily: "Roboto",
                     margin: "10px auto 10px auto",
@@ -29,11 +30,11 @@ function Navbar(props){
                             sx={{ order: { xs: 2, sm: 2 }, width:"auto" }}>
 
                             <Grid>
-                                <a href="#" className='navBarText' >Home</a>
+                                <a href="#home" className='navBarText' >Home</a>
                             </Grid>
 
                             <Grid>
-                                <a href="#" className='navBarText'>About</a>
+                                <a href="#about" className='navBarText'>About</a>
                             </Grid>
 
                             <Grid>

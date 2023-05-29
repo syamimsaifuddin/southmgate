@@ -28,7 +28,8 @@ function MobileMenu(props){
             backgroundColor: "rgba(255, 255, 255, 0)", 
             fontFamily: "Roboto",
             marginTop: "10px", 
-            marginBottom: "10px"}}>
+            marginBottom: "10px"
+            }}>
 
             <Grid 
                 xs={12}
@@ -63,10 +64,10 @@ function MobileMenu(props){
                         <Button>
                                 {<CloseIcon sx={{color: "black"}} onClick={openMenu}/>}
                         </Button>
-                        <a href="#" style={{textDecoration: "none", color: "black"}}>Home</a>
-                        <a href="#" style={{textDecoration: "none", color: "black"}}>About</a>
-                        <a href="#" style={{textDecoration: "none", color: "black"}}>Services</a>
-                        <a href="#" style={{textDecoration: "none", color: "black"}}>Team</a>
+                        <a href="#home" style={{textDecoration: "none", color: "black"}} onClick={openMenu}>Home</a>
+                        <a href="#about" style={{textDecoration: "none", color: "black"}} onClick={openMenu}>About</a>
+                        <a href="#" style={{textDecoration: "none", color: "black"}}  onClick={openMenu}>Services</a>
+                        <a href="#" style={{textDecoration: "none", color: "black"}}  onClick={openMenu}>Team</a>
                         <a href="#contact" style={{textDecoration: "none", color: "black"}} onClick={openMenu}>Contact</a>
                     </Stack>
                 </Box>
