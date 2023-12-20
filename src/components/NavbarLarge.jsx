@@ -38,11 +38,11 @@ function Navbar(props){
                             </Grid>
 
                             <Grid>
-                                <a href="#" className='navBarText'>Services</a>
+                                <a href="#services" className='navBarText'>Services</a>
                             </Grid>
 
                             <Grid>
-                                <a href="#" className='navBarText'>Team</a>
+                                <a href="#client" className='navBarText'>Client</a>
                             </Grid>
                             
                             <Grid>
