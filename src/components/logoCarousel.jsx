@@ -31,7 +31,7 @@ const LogoCarousel = ({ logos }) => {
             src={logo.url}
             className="logoShowcase" 
             style={{
-              width: '300px', // Adjust as needed
+              width: (logo.sizePercent/100)*250 +'px', // Adjust as needed
               maxWidth: '250px', // Maximum width for scaling
               padding: '20px 50px 20px 50px'
             }}

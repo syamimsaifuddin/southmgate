@@ -7,6 +7,7 @@ import Footnote from './components/Footnote';
 import MobileMenu from './components/MobileMenuPopOver';
 import { Grid, Typography } from '@mui/material';
 import LogoCarousel from './components/logoCarousel';
+import Showcase from './components/showcase';
 
 
 // LOGO IMPORT
@@ -18,15 +19,18 @@ import shellLogo from './images/shellLogo.png'
 import weatherfordLogo from './images/weatherfordLogo.png'
 import exxonMobilLogo from './images/exxonMobilLogo.png'
 
+//SERVICE IMAGE IMPORT
+import valveSample1 from './images/valveSample1.jpg'
+
 
 const logos = [
-    { name: 'ExxonMobil', url: exxonMobilLogo },
-    { name: 'Petronas', url: petronasLogo },
-    { name: 'Hibiscus Petroleum', url: hibiscusPetLogo },
-    { name: 'MPOB', url: mpobLogo },
-    { name: 'MMHE', url: mmhe },
-    { name: 'Weatherford', url: weatherfordLogo },
-    { name: 'LShell', url: shellLogo}
+    { name: 'ExxonMobil', url: exxonMobilLogo , sizePercent: 100},
+    { name: 'Petronas', url: petronasLogo, sizePercent: 100 },
+    { name: 'Hibiscus Petroleum', url: hibiscusPetLogo, sizePercent: 100 },
+    { name: 'MPOB', url: mpobLogo , sizePercent: 70},
+    { name: 'MMHE', url: mmhe, sizePercent: 100 },
+    { name: 'Weatherford', url: weatherfordLogo, sizePercent: 100 },
+    { name: 'LShell', url: shellLogo, sizePercent: 65 }
     // Add more logos as needed
   ];
 
@@ -89,11 +93,35 @@ function App(){
                             <Typography sx={{color: "white", fontSize: "40px", fontWeight: 'bolder', letterSpacing: "0.5px", padding: "0 25px 0 25px", textAlign: "justify", alignSelf: "center"}}>
                                 SERVICES
                             </Typography>
+                            <Showcase
+                                imageSrc={valveSample1}
+                                descriptionTitle = 'Item1'
+                                description="Description of your showcase."
+                                position='left'
+                            />
+                            <Showcase
+                                imageSrc={valveSample1}
+                                descriptionTitle = 'Item2'
+                                description="Description of your showcase."
+                                position='right'
+                            />
+                            <Showcase
+                                imageSrc={valveSample1}
+                                descriptionTitle = 'Item3'
+                                description="Description of your showcase."
+                                position='left'
+                            />
+                            <Showcase
+                                imageSrc={valveSample1}
+                                descriptionTitle = 'Item4'
+                                description="Description of your showcase."
+                                position='right'
+                            />
                         </Box>
 
                         <Box id='client' sx={{backgroundColor: "rgba(213, 205, 209, 0.4)", borderRadius: "20px", width: "95%", margin: "auto", display: "flex", flexDirection: "column", padding: "20px 0 30px 0"}}>
                             <Typography sx={{color: "black", fontSize: "40px", fontWeight: 'bolder', letterSpacing: "0.5px", padding: "0 25px 25px 25px", textAlign: "justify", alignSelf: "center"}}>
-                                CLIENT
+                                CLIENTS
                             </Typography>
                             <Box sx={{backgroundColor: "rgba(213, 205, 209, 0)", borderRadius: "20px", width: "95%", margin: "auto", display: "flex", flexDirection: "column", padding: "40px 0 40px 0"}}>
                                 <LogoCarousel logos={logos}/>
@@ -136,11 +164,23 @@ function App(){
                             <Typography sx={{color: "white", fontSize: "40px", fontWeight: 'bolder', letterSpacing: "0.5px", padding: "0 25px 0 25px", textAlign: "justify", alignSelf: "center"}}>
                                 SERVICES
                             </Typography>
+                            <Showcase
+                                imageSrc={valveSample1}
+                                descriptionTitle = 'Item1'
+                                description="Description of your showcase."
+                                position='top'
+                            />
+                            <Showcase
+                                imageSrc={valveSample1}
+                                descriptionTitle = 'Item2'
+                                description="Description of your showcase."
+                                position='top'
+                            />
                         </Box>
 
                         <Box id='client' sx={{backgroundColor: "rgba(213, 205, 209, 0.4)", borderRadius: "20px", width: "95%", margin: "auto", display: "flex", flexDirection: "column", padding: "20px 0 30px 0"}}>
                             <Typography sx={{color: "black", fontSize: "40px", fontWeight: 'bolder', letterSpacing: "0.5px", padding: "0 25px 25px 25px", textAlign: "justify", alignSelf: "center"}}>
-                                CLIENT
+                                CLIENTS
                             </Typography>
                             <Box sx={{backgroundColor: "rgba(213, 205, 209, 0)", borderRadius: "20px", width: "95%", margin: "auto", display: "flex", flexDirection: "column", padding: "40px 0 40px 0"}}>
                                 <LogoCarousel logos={logos}/>

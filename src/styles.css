@@ -98,3 +98,78 @@ body {
     align-items: center !important;
   }
 
+/* .slick-dots {
+    display: flex !important;
+    align-items: center !important;
+} */
+
+.showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 0 0;
+  }
+
+  .left {
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  
+  .right {
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+  }
+
+  .top {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .bottom {
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+  }
+
+
+  .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 50px 30px 50px
+  }
+  
+  .description {
+    flex: 1;
+    padding: 0 20px; /* Adjust padding as needed */
+    color: #f5f5f5;
+    font-size: 20px;
+    font-family: roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .descriptionTitle {
+    flex: 1;
+    padding: 0 20px; /* Adjust padding as needed */
+    color: #f5f5f5;
+    font-size: 30px;
+    font-family: roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .descriptionBox {
+    padding: 20px;
+    background-color: #96949236;
+    border-radius: 10px;
+  }
