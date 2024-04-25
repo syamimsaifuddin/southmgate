@@ -7,7 +7,6 @@ import Footnote from './components/Footnote';
 import MobileMenu from './components/MobileMenuPopOver';
 import { Grid, Typography } from '@mui/material';
 import LogoCarousel from './components/logoCarousel';
-import Showcase from './components/showcase';
 import SimpleSlider from './components/basicCarousel'
 
 
@@ -21,7 +20,6 @@ import weatherfordLogo from './images/weatherfordLogo.png'
 import exxonMobilLogo from './images/exxonMobilLogo.png'
 
 //SERVICE IMAGE IMPORT
-import valveSample1 from './images/valveSample1.jpg'
 import steelPipeline from './images/steelPipeline.jpg'
 import labPic from './images/labPic.jpg'
 
