@@ -8,6 +8,7 @@ import MobileMenu from './components/MobileMenuPopOver';
 import { Grid, Typography } from '@mui/material';
 import LogoCarousel from './components/logoCarousel';
 import Showcase from './components/showcase';
+import SimpleSlider from './components/basicCarousel'
 
 
 // LOGO IMPORT
@@ -21,6 +22,8 @@ import exxonMobilLogo from './images/exxonMobilLogo.png'
 
 //SERVICE IMAGE IMPORT
 import valveSample1 from './images/valveSample1.jpg'
+import steelPipeline from './images/steelPipeline.jpg'
+import labPic from './images/labPic.jpg'
 
 
 const logos = [
@@ -31,6 +34,16 @@ const logos = [
     { name: 'MMHE', url: mmhe, sizePercent: 100 },
     { name: 'Weatherford', url: weatherfordLogo, sizePercent: 100 },
     { name: 'LShell', url: shellLogo, sizePercent: 65 }
+    // Add more logos as needed
+  ];
+
+const valve = [
+    { name: 'pipe', url: steelPipeline , sizePercent: 100},
+    { name: 'labpic', url: labPic, sizePercent: 100 },
+    { name: 'pipe', url: steelPipeline , sizePercent: 100},
+    { name: 'labpic', url: labPic, sizePercent: 100 },
+    { name: 'pipe', url: steelPipeline , sizePercent: 100},
+    { name: 'labpic', url: labPic, sizePercent: 100 },
     // Add more logos as needed
   ];
 
@@ -89,34 +102,41 @@ function App(){
                             </Typography>
                         </Box>
 
-                        <Box id='services' sx={{backgroundColor: "rgba(6, 15, 51, 0.9)", borderRadius: "20px", width: "95%", margin: "10px auto 10px auto", alignItems: "center", display: "flex", flexDirection: "column", padding: "10px 0 20px 0"}}>
-                            <Typography sx={{color: "white", fontSize: "40px", fontWeight: 'bolder', letterSpacing: "0.5px", padding: "0 25px 0 25px", textAlign: "justify", alignSelf: "center"}}>
+                        <Box id='services' sx={{backgroundColor: "rgba(6, 15, 51, 0.9)", borderRadius: "20px", width: "95%", margin: "auto", display: "flex", flexDirection: "column", padding: "20px 0 30px 0", marginBottom: '60px'}}>
+                            <Typography sx={{ color: "white", fontSize: "40px", fontWeight: "bolder", letterSpacing: "0.5px", padding: "0 25px 0 25px" }}>
                                 SERVICES
                             </Typography>
-                            <Showcase
-                                imageSrc={valveSample1}
-                                descriptionTitle = 'Item1'
-                                description="Description of your showcase."
-                                position='left'
-                            />
-                            <Showcase
-                                imageSrc={valveSample1}
-                                descriptionTitle = 'Item2'
-                                description="Description of your showcase."
-                                position='right'
-                            />
-                            <Showcase
-                                imageSrc={valveSample1}
-                                descriptionTitle = 'Item3'
-                                description="Description of your showcase."
-                                position='left'
-                            />
-                            <Showcase
-                                imageSrc={valveSample1}
-                                descriptionTitle = 'Item4'
-                                description="Description of your showcase."
-                                position='right'
-                            />
+                            <Box id='services' sx={{backgroundColor: "rgba(6, 15, 51, 0.0)", borderRadius: "20px", width: "70%", margin: "10px auto 10px auto", alignItems: "center", display: "flex", justifyContent:'center', padding: "10px 0 20px 0"}}>
+                                <Grid container justifyContent="center" alignItems="center" rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                                    <Grid item xs={6}>
+                                        <Typography sx={{ color: "white", fontSize: "40px", fontWeight: "bolder", letterSpacing: "0.5px", padding: "0 25px 0 25px"}}>
+                                            VALVE
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item xs={6}>
+                                        <SimpleSlider logos={valve} show={2} />
+                                    </Grid>
+
+                                    <Grid item xs={6}>
+                                        <Typography sx={{ color: "white", fontSize: "40px", fontWeight: "bolder", letterSpacing: "0.5px", padding: "0 25px 0 25px"}}>
+                                            PIPE
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item xs={6}>
+                                        <SimpleSlider logos={valve} show={2} />
+                                    </Grid>
+
+                                    <Grid item xs={6}>
+                                        <Typography sx={{ color: "white", fontSize: "40px", fontWeight: "bolder", letterSpacing: "0.5px", padding: "0 25px 0 25px"}}>
+                                            CHEMICAL
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item xs={6}>
+                                        <SimpleSlider logos={valve} show={2} />
+                                    </Grid>
+
+                                </Grid>
+                            </Box>
                         </Box>
 
                         <Box id='client' sx={{backgroundColor: "rgba(213, 205, 209, 0.4)", borderRadius: "20px", width: "95%", margin: "auto", display: "flex", flexDirection: "column", padding: "20px 0 30px 0"}}>
@@ -131,6 +151,7 @@ function App(){
                         
                 </Box>
                 : <Box className="Box">
+                    {console.log('hello')}
                         <MobileMenu/>
                         <Box id='home' className='mainTitle' sx={{backgroundColor: "#DD9331", height: "800px", width: "100%", margin: "auto", alignItems: "center", justifyContent: "center", display: "flex", flexDirection: "column"}}>
                         <Typography variant='h5' sx ={{marginBottom: '0px', letterSpacing: "15px", color: "#DD9331", fontSize: "20px", padding: "0 25px 0 25px", fontWeight: 'bolder'}}>SOUTH MOONSGATE</Typography>
@@ -160,22 +181,41 @@ function App(){
                             </Typography>
                         </Box>
 
-                        <Box id='services' sx={{backgroundColor: "rgba(6, 15, 51, 0.9)", borderRadius: "20px", width: "95%", margin: "10px auto 10px auto", alignItems: "center", display: "flex", flexDirection: "column", padding: "10px 0 20px 0"}}>
-                            <Typography sx={{color: "white", fontSize: "40px", fontWeight: 'bolder', letterSpacing: "0.5px", padding: "0 25px 0 25px", textAlign: "justify", alignSelf: "center"}}>
+                        <Box id='services' sx={{backgroundColor: "rgba(6, 15, 51, 0.9)", borderRadius: "20px", width: "95%", margin: "auto", display: "flex", flexDirection: "column", padding: "20px 0 30px 0", marginBottom: '60px'}}>
+                            <Typography sx={{ color: "white", fontSize: "40px", fontWeight: "bolder", letterSpacing: "0.5px", padding: "0 25px 0 25px" }}>
                                 SERVICES
                             </Typography>
-                            <Showcase
-                                imageSrc={valveSample1}
-                                descriptionTitle = 'Item1'
-                                description="Description of your showcase."
-                                position='top'
-                            />
-                            <Showcase
-                                imageSrc={valveSample1}
-                                descriptionTitle = 'Item2'
-                                description="Description of your showcase."
-                                position='top'
-                            />
+                            <Box id='services' sx={{backgroundColor: "rgba(6, 15, 51, 0.0)", borderRadius: "20px", width: "70%", margin: "10px auto 10px auto", alignItems: "center", display: "flex", justifyContent:'center', padding: "10px 0 20px 0"}}>
+                                <Grid container direction='row' justifyContent="center" alignItems="center" rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                                    <Grid item xs={12}>
+                                        <Typography sx={{ color: "white", fontSize: "40px", fontWeight: "bolder", letterSpacing: "0.5px", padding: "0 25px 0 25px"}}>
+                                            VALVE
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <SimpleSlider logos={valve} show={1}/>
+                                    </Grid>
+
+                                    <Grid item xs={12}>
+                                        <Typography sx={{ color: "white", fontSize: "40px", fontWeight: "bolder", letterSpacing: "0.5px", padding: "0 25px 0 25px"}}>
+                                            PIPE
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <SimpleSlider logos={valve} show={1}/>
+                                    </Grid>
+
+                                    <Grid item xs={12}>
+                                        <Typography sx={{ color: "white", fontSize: "40px", fontWeight: "bolder", letterSpacing: "0.5px", padding: "0 25px 0 25px"}}>
+                                            CHEMICAL
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <SimpleSlider logos={valve} show={1}/>
+                                    </Grid>
+
+                                </Grid>
+                            </Box>
                         </Box>
 
                         <Box id='client' sx={{backgroundColor: "rgba(213, 205, 209, 0.4)", borderRadius: "20px", width: "95%", margin: "auto", display: "flex", flexDirection: "column", padding: "20px 0 30px 0"}}>
