@@ -33,7 +33,7 @@ const LogoCarousel = ({ logos }) => {
             style={{
               width: (logo.sizePercent/100)*250 +'px', // Adjust as needed
               maxWidth: '250px', // Maximum width for scaling
-              padding: '20px 50px 20px 50px'
+              padding: '20px 40px 20px 40px'
             }}
           />
         </Box>

@@ -8,10 +8,17 @@ function Footnote(props){
     return(
         <Box className='Footnote' id={props.id}>
             <Grid container justifyContent="center" alignItems="center">
-                <Grid sx={{paddingRight: "40px"}}>
-                    <img src={CompanyLogo} className="Logo" alt="Logo"/>
+                <Grid item xs={12} sm={12} md={3} style={{ display: "grid", placeItems: "center", height: "100%", marginBottom: '20px' }}>
+                    <img src={CompanyLogo} className="LogoFooter" alt="Logo"/>
                 </Grid>
-                <Grid>
+                <Grid item xs={12} sm={12} md={3}>
+                    <Typography sx={{color: "black", fontSize: "12px", fontWeight: 'normal', letterSpacing: "0.5px", marginTop: "20px", padding: "0 15% 0 15%", textAlign: "justify"}}>ABOUT US</Typography>
+                    <Typography sx={{color: "#DD9931", fontSize: "12px", fontWeight: 'normal', letterSpacing: "0.5px", marginTop: "20px", padding: "0 15% 0 15%", textAlign: "justify", marginBottom: '20px'}}>
+                        South Moonsgate is your trusted industrial supplier and distributor in Malaysia. We provide an extensive array of valves, chemicals, pipe fittings, and more, all focusing on safety, durability, and innovations.
+                    </Typography>
+                    
+                </Grid>
+                <Grid item xs={12} sm={12} md={3}>
                     <Stack spacing={0} justifyContent="center" alignItems="center">
                         <Typography sx={{fontFamily: 'Roboto'}}>Email</Typography>
                         <a href={`mailto:info@southmoonsgate.com`} className="linkEmail">

@@ -38,7 +38,7 @@ function Navbar(props){
                             </Grid>
 
                             <Grid>
-                                <a href="#services" className='navBarText'>Services</a>
+                                <a href="#product" className='navBarText'>Product</a>
                             </Grid>
 
                             <Grid>

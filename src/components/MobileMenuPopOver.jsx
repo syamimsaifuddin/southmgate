@@ -66,7 +66,7 @@ function MobileMenu(props){
                         </Button>
                         <a href="#home" style={{textDecoration: "none", color: "black"}} onClick={openMenu}>Home</a>
                         <a href="#about" style={{textDecoration: "none", color: "black"}} onClick={openMenu}>About</a>
-                        <a href="#services" style={{textDecoration: "none", color: "black"}}  onClick={openMenu}>Services</a>
+                        <a href="#product" style={{textDecoration: "none", color: "black"}}  onClick={openMenu}>Product</a>
                         <a href="#client" style={{textDecoration: "none", color: "black"}}  onClick={openMenu}>Client</a>
                         <a href="#contact" style={{textDecoration: "none", color: "black"}} onClick={openMenu}>Contact</a>
                     </Stack>

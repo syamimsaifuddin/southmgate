@@ -13,7 +13,11 @@ body {
 }
 
 .Logo {
-    height: 80px;
+    height: 120px;
+}
+
+.LogoFooter {
+    height: 150px;
 }
 
 .NavObject:hover {
@@ -172,4 +176,12 @@ body {
     padding: 20px;
     background-color: #96949236;
     border-radius: 10px;
+  }
+
+  .container-image {
+    position: relative;
+  }
+
+  .portfolio-details-container {
+    position: relative;
   }

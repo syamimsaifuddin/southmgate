@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import Box from '@mui/material/Box';
+import { Height } from "@mui/icons-material";
 
 
 const SimpleSlider = ({ logos, show }) => {
@@ -17,12 +18,20 @@ const SimpleSlider = ({ logos, show }) => {
         
       <Slider {...settings}>
       {logos.map((logo, index) => (
-        <img 
-          key= {index}
-          alt={logo.name}
-          src={logo.url}
-          className="logoShowcase" 
-        />
+        <Box className='container-image'>
+          <img 
+            key= {index}
+            alt={logo.name}
+            src={logo.url}
+            className="logoShowcase"
+            style={{
+              width: "100%", // Adjust as needed
+              // maxWidth: '300px', // Maximum width for scaling
+              // padding: '20px 50px 20px 50px'
+              // objectFit: 'cover'
+            }}
+          />
+        </Box>
       ))}
       </Slider>
     </div>
