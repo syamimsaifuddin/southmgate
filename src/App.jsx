@@ -150,7 +150,7 @@ function App(){
                                         We provide an extensive collection of valves that accommodate various pressure, temperature, and flow rate requirements of your oil and gas operations.
                                         </Typography>
                                         <hr style={{width: '70%'}}></hr>
-                                        <img key= {1} alt={'LOV'} src={LOVLogo} className="logoShowcase" style={{width: '200px'}}/>
+                                        {/* <img key= {1} alt={'LOV'} src={LOVLogo} className="logoShowcase" style={{width: '200px'}}/> */}
                                     </Grid>
                                     <Grid item xs={6}>
                                         <SimpleSlider logos={valve} show={2} />
@@ -261,7 +261,7 @@ function App(){
                                             We provide an extensive collection of valves that accommodate various pressure, temperature, and flow rate requirements of your oil and gas operations.
                                         </Typography>
                                         <hr style={{width: '70%'}}></hr>
-                                        <img key= {1} alt={'LOV'} src={LOVLogo} className="logoShowcase" style={{width: '200px'}}/>
+                                        {/* <img key= {1} alt={'LOV'} src={LOVLogo} className="logoShowcase" style={{width: '200px'}}/> */}
                                     </Grid>
                                     <Grid item xs={12} marginBottom={'40px'}>
                                         <SimpleSlider logos={valve} show={1} />
